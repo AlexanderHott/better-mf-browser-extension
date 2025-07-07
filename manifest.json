@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Better MF Browser Extension",
+  "version": "1.0",
+  "description": "Injects CSS into the page to make it readable.",
+  "permissions": ["<all_urls>", "tabs"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_title": "Fix website"
+  }
+}
