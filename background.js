@@ -17,6 +17,12 @@ function injectCSS() {
     h1, h2, h3 {
       line-height: 1.2;
     }
+    @media (prefers-color-scheme: dark) {
+      body {
+        color: #ccc; /* Light gray text for dark mode */
+        background-color: #121212; /* Dark background */
+      }
+    }
   `;
   const style = document.createElement("style");
   style.textContent = css;
